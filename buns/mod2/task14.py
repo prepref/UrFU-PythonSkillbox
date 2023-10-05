@@ -4,7 +4,7 @@ import csv
 
 # Задание 2.1
 # Проверяет, есть ли в строке значения, длина которых равна 0
-def ValidateRows(row) -> bool:
+def ValidateRows(row: list()) -> bool:
     for i in row:
         i = " ".join(str(i).split())
         if len(i) == 0:
