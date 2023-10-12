@@ -1,0 +1,1 @@
+print([True if len(i.split(' ')) == len(set(i.split(' '))) else False for i in [input()]][0])

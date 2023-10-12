@@ -1,0 +1,1 @@
+print([", ".join([bin(i)[2:],oct(i)[2:],hex(i)[2:]]) if i>0 and i%10==0 else "Неверный ввод" for i in list(map(int, input().split()))][0])
