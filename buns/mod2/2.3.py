@@ -102,13 +102,13 @@ def ListMediumSalaries(l: list) -> None:
  
     for i in l:
         count_vacancies_cities[i[2]] = count_vacancies_cities.get(i[2], []) + [i[3]]
-    print(f'Из {len(count_vacancies_cities)} городов, самые высокие средние ЗП:')
     count_vacancies_cities_new = {}
     for key,value in count_vacancies_cities.items():
         if int(len(value) / len(l) * 100) >= 1:
             count_vacancies_cities_new[key] = value
     count_vacancies_cities_new =  sorted(count_vacancies_cities_new.items(), key=lambda x: sum(x[1]) // len(x[1]), reverse=True)
     n = 1
+    print(f'Из {len(count_vacancies_cities)} городов, самые высокие средние ЗП:')
     for i in count_vacancies_cities_new:
         print(f'    {n}) {i[0]} - средняя зарплата {sum(i[1]) // len(i[1])} {GetRightFormWord(sum(i[1]) // len(i[1]), "рубль", "рубля", "рублей")} ({len(i[1])} {GetRightFormWord(len(i[1]), "вакансия", "вакансии", "вакансий")})')
         n+=1
