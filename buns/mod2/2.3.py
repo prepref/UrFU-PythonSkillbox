@@ -115,7 +115,7 @@ def ListMediumSalaries(l: list) -> None:
         if n>10:
             break
 
-# Выводит CSV заданному формату в  заданиях 2.1, 2.2, 2.3
+# Выводит CSV заданному формату в  задание 2.3
 def OutputCorrectlyCSV(name: str) -> None:
 
     l = ValidateCSV(name)
