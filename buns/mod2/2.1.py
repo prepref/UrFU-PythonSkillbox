@@ -30,7 +30,7 @@ def ValidateCSV(name: str) -> (list, list):
 
 
 
-# Выводит CSV заданному формату в  заданиях 2.1, 2.2, 2.3
+# Выводит CSV заданному формату в  заданиях 2.1
 def OutputCorrectlyCSV(name: str) -> None:
      # Задание 2.1
     fields_head = list()
