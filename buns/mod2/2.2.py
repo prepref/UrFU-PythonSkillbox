@@ -44,7 +44,7 @@ def RemoveHTML_Tags_ForString(value: str)-> str:
 
     return s
 
-# Удаляет лишние пробелы в начале, конце и середине значений
+# Удаляет лишние пробелы и html теги
 def RemoveSpace(fields: list) -> list:
     new_fields = list(list())
 
@@ -98,7 +98,7 @@ def CSV_ToDict(fields_head: list, fields: list) -> list:
     
     return dict_fields
 
-# Выводит CSV заданному формату в  заданиях 2.1, 2.2, 2.3
+# Выводит CSV заданному формату в  заданиях 2.2
 def OutputCorrectlyCSV(name: str) -> None:
     # Задание 2.1
     fields_head = list()
